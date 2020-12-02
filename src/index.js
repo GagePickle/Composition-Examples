@@ -1,6 +1,6 @@
 const Runner = (speed) => ({
   run() {
-    return `I can run ${this.speed}`;
+    return `I can run at an ${this.speed} speed`;
   },
 });
 
@@ -16,16 +16,14 @@ const Speaker = (sound) => ({
   },
 });
 
-const Person = ({ name, age, gender, favFood, sound, speed }) => ({
+const Person = ({ name, age, gender, favFood, speed }) => ({
   name,
   age,
   gender,
   favFood,
-  sound,
   speed,
   ...Runner(speed),
   ...Eater(favFood),
-  ...Speaker(sound),
 });
 
 const Animal = ({ species, gender, favFood, sound, speed }) => ({
