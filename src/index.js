@@ -27,3 +27,14 @@ const Person = ({ name, age, gender, favFood, sound, speed }) => ({
   ...Eater(favFood),
   ...Speaker(sound),
 });
+
+const Animal = ({ species, gender, favFood, sound, speed }) => ({
+  species,
+  gender,
+  favFood,
+  sound,
+  speed,
+  ...Runner(speed),
+  ...Eater(favFood),
+  ...Speaker(sound),
+});
