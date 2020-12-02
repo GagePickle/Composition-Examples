@@ -57,3 +57,17 @@ console.log(jeff.greet());
 console.log(jeff.run());
 
 console.log(jeff.eat());
+
+const fido = Animal({
+  species: "Dog",
+  gender: "Male",
+  favFood: "Kibble",
+  sound: "Bark",
+  speed: "Fast",
+});
+
+console.log(fido.run());
+
+console.log(fido.speak());
+
+console.log(fido.eat());
