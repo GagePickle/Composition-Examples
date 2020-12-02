@@ -16,6 +16,12 @@ const Speaker = (sound) => ({
   },
 });
 
+const Greeter = (name) => ({
+  greet() {
+    return `Hello, my name is ${this.name}`;
+  },
+});
+
 const Person = ({ name, age, gender, favFood, speed }) => ({
   name,
   age,
