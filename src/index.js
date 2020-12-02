@@ -1,6 +1,6 @@
 const Runner = (speed) => ({
   run() {
-    return `I can run at an ${this.speed} speed`;
+    return `I can run at ${this.speed} speeds`;
   },
 });
 
