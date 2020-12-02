@@ -15,3 +15,15 @@ const Speaker = (sound) => ({
     return `${this.sound}`;
   },
 });
+
+const Person = ({ name, age, gender, favFood, sound, speed }) => ({
+  name,
+  age,
+  gender,
+  favFood,
+  sound,
+  speed,
+  ...Runner(speed),
+  ...Eater(favFood),
+  ...Speaker(sound),
+});
