@@ -43,3 +43,17 @@ const Animal = ({ species, gender, favFood, sound, speed }) => ({
   ...Eater(favFood),
   ...Speaker(sound),
 });
+
+const jeff = Person({
+  name: "Jeff",
+  age: 22,
+  gender: "Male",
+  favFood: "Pizza",
+  speed: "Average",
+});
+
+console.log(jeff.greet());
+
+console.log(jeff.run());
+
+console.log(jeff.eat());
